@@ -1,4 +1,4 @@
-import json
+
 import xml.dom.minidom as md
 import re
 #Import file and export file
