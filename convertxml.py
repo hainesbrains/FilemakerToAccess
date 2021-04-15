@@ -69,14 +69,16 @@ def  accessify(table, data, export_file):
 
 
 
-def main():
-    import_file = "fmpro1.xml"
-    export_file = "test.xml"
+def main(import_file, export_file):
     data = import_xml(import_file)
     table = tablefy(data)
     accessify(table, data, export_file)
 
 
-    
-
-main()
+i = 0
+while True:
+    try:
+    	main("fmpro" + i + ".xml", "access" + i + ".xml")
+    	i++
+    except:
+	break
