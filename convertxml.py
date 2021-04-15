@@ -77,8 +77,7 @@ def main(import_file, export_file):
 
 i = 0
 while True:
-    try:
-    	main("fmpro" + i + ".xml", "access" + i + ".xml")
-    	i++
-    except:
-	break
+    main("fmpro" + str(i) + ".xml", "access" + str(i) + ".xml")
+    i += 1
+    
+        
